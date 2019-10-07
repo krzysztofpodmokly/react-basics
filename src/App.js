@@ -35,7 +35,7 @@ const initialState = [
 
 class App extends React.Component {
   state = {
-    accounts: [...initialState]
+    items: [...initialState]
   };
 
   addItem = e => {
@@ -48,16 +48,15 @@ class App extends React.Component {
     };
 
     this.setState(prevState => ({
-      accounts: [...prevState.accounts, newAccount]
+      items: [...prevState.items, newAccount]
     }));
-
     e.target.reset();
   };
 
   render() {
     return (
       <div>
-        <ListWrapper accounts={this.state.accounts} />
+        <ListWrapper items={this.state.items} />
         <Form addItem={this.addItem} />
       </div>
     );
