@@ -41,19 +41,19 @@
   outline: none;
 }
 
-.input:focus+.label,
-.textarea:focus+.label {
+.input:focus + .label,
+.textarea:focus + .label {
   top: -22px;
   font-size: 13px;
 }
 
-.input:not(:placeholder-shown)+.label,
-.textarea:not(:placeholder-shown)+.label {
+.input:not(:placeholder-shown) + .label,
+.textarea:not(:placeholder-shown) + .label {
   top: -22px;
   font-size: 13px;
 }
 
-.input:focus~.formItemBar,
-.textarea:focus~.formItemBar {
+.input:focus ~ .formItemBar,
+.textarea:focus ~ .formItemBar {
   background: #1e58ff;
 }
